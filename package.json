@@ -1,0 +1,31 @@
+{
+  "name": "breck",
+  "version": "1.0.0",
+  "description": "A place to make things fancy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "find node_modules/ -name '*.info' -type f -delete"
+  },
+  "author": "Bjorn",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-preset-env": "^1.6.1",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^2.0.10",
+    "gulp-concat": "^2.6.0",
+    "gulp-livereload": "^3.8.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.4.0",
+    "webpack": "^2.6.1",
+    "webpack-stream": "^3.2.0"
+  },
+  "dependencies": {
+    "script-loader": "^0.7.0",
+    "svg-injector": "1.1.3"
+  }
+}
