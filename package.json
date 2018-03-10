@@ -1,13 +1,13 @@
 {
   "name": "breck",
   "version": "1.0.0",
-  "description": "A place to make things fancy",
+  "description": "a thing to make things look nice",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "find node_modules/ -name '*.info' -type f -delete"
   },
-  "author": "Bjorn",
+  "author": "E3 & Bjorn",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.24.0",
@@ -21,11 +21,15 @@
     "gulp-plumber": "^1.1.0",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.4.0",
+    "sassdoc": "^2.1.20",
     "webpack": "^2.6.1",
     "webpack-stream": "^3.2.0"
   },
   "dependencies": {
+    "clipboard": "^1.7.1",
+    "formatter.js": "git+https://github.com/firstopinion/formatter.js.git",
     "script-loader": "^0.7.0",
+    "select2": "^4.0.6-rc.1",
     "svg-injector": "1.1.3"
   }
 }

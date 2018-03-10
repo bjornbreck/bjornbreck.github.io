@@ -1,2 +1,5 @@
-@import "base/settings";
-@import "base/page";
+body {
+  background-color: #169882;
+  color: #fff; }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJhc2UvX3BhZ2Uuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLDBCQUF5QjtFQUN6QixZQUFXLEVBQ1oiLCJmaWxlIjoic3R5bGUuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiYm9keSB7XG4gIGJhY2tncm91bmQtY29sb3I6ICMxNjk4ODI7XG4gIGNvbG9yOiAjZmZmO1xufVxuIl19 */
