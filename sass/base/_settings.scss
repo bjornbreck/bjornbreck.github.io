@@ -1,0 +1,24 @@
+////
+/// All things settings related
+////
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../icomoon/fonts/icomoon.eot?7u9fp');
+  src:  url('../icomoon/fonts/icomoon.eot?7u9fp#iefix') format('embedded-opentype'),
+  url('../icomoon/fonts/icomoon.ttf?7u9fp') format('truetype'),
+  url('../icomoon/fonts/icomoon.woff?7u9fp') format('woff'),
+  url('../icomoon/fonts/icomoon.svg?7u9fp#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Cantarell:400,700|Fjalla+One');
+
+// Fonts
+$cantarell: 'Cantarell', sans-serif;
+$fjalla: 'Fjalla One', sans-serif;
+
+// Colors
+$gossamer: #169882;
+$rock-spray: #a33d28;

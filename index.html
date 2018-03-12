@@ -5,11 +5,36 @@
   <title>Bjorn Breckenridge</title>
   <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
- <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./node_modules/tippy.js/dist/tippy.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="./node_modules/tippy.js/dist/tippy.all.js"></script>
+  <script src="./js/dist/themekit.js"></script>
 </head>
 <body>
-  <header>web development is pretty neat.</header>
+  <main>
+    <header><h1>web development is pretty neat.</h1></header>
+    <p>Howdy, I'm <b class="tooltipMe">Bjorn Breckenridge</b> a front-end web developer living in <b class="tooltipLocation">Denver</b> <sup class="tooltipRealLocation" title="Actually I live in Arvada but it's kinda all the same... Right?">*</sup><br>I like making things fun and entertaining on the internet. My main focus as of late has been Drupal but I love new adventures. Day to day I work with SASS, JS, Twig, PHP, and many other technologies.</p>
+    <p>Also I absolutely love the outdoors, <span class="tooltipMountainBking"><b>mountain biking</b></span> is my <span class="tooltipJam"><b>jam</b></span>.</p>
+    <ul class="social">
+      <li class="github"><a href="https://github.com/bjornbreck">github</a></li>
+      <li class="twitter"><a href="https://twitter.com/bjornbrecken">twitter</a></li>
+      <li class="instagram"><a href="https://www.instagram.com/bjornbreck/">instagram</a></li>
+    </ul>
 
-
+    <div class="myFace">
+      <img alt="bjorn" src="./images/me.jpg">
+    </div>
+    <div class="mountainBiking">
+      <img alt="mountainbiking" src="./images/mountain-biking.jpg">
+    </div>
+    <div class="jam">
+      <img alt="jam" src="./images/jam.jpg">
+    </div>
+    <div class="myLocation">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d196281.1305457128!2d-104.99554065413031!3d39.76451826112941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876b80aa231f17cf%3A0x118ef4f8278a36d6!2sDenver%2C+CO!5e0!3m2!1sen!2sus!4v1520893620045" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+  </main>
 </body>
+
 </html>

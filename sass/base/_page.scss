@@ -1,4 +1,100 @@
+////
+/// Shit Happens Here
+////
+
+html {
+  cursor: url(./../images/cursor.png), auto;
+}
+
 body {
-  background-color: #169882;
-  color: #fff;
+  background-color: $gossamer;
+}
+
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  flex-basis: auto;
+  align-items: center;
+  justify-content: center;
+  max-width: 700px;
+  min-height: 700px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 30px;
+}
+
+/// Social things
+/// =============
+.social {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  a {
+    font: 0/0 transparent;
+    text-decoration: none;
+    &:before {
+      font-family: 'icomoon' !important;
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      color: $rock-spray;
+      font-size: 1.7rem;
+    }
+    &:hover {
+      cursor: url(./../images/pointer.png), auto;
+    }
+  }
+  li {
+    display: inline-block;
+    + li {
+      margin-left: 10px;
+    }
+    &.github a {
+      &:before {
+        content: "\e900";
+      }
+    }
+    &.instagram a {
+      &:before {
+        content: "\e901";
+      }
+    }
+    &.twitter a {
+      &:before {
+        content: "\e902";
+      }
+    }
+  }
+}
+
+/// Just the tip
+/// ============
+.tippy-tooltip {
+  &.awesome-theme {
+    background-color: $rock-spray;
+  }
+  img {
+    max-width: 400px!important;
+  }
+}
+
+.tippy-popper[x-placement^=top] .tippy-tooltip.awesome-theme .tippy-arrow {
+  border-top-color: $rock-spray!important;
+}
+
+.tippy-popper[x-placement^=right] .tippy-tooltip.awesome-theme .tippy-arrow {
+  border-right-color: $rock-spray!important;
+}
+
+.tippy-popper[x-placement^=bottom] .tippy-tooltip.awesome-theme .tippy-arrow {
+  border-bottom-color: $rock-spray!important;
+}
+
+.tippy-popper[x-placement^=left] .tippy-tooltip.awesome-theme .tippy-arrow {
+  border-left-color: $rock-spray!important;
 }
