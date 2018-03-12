@@ -17,7 +17,7 @@ main {
   align-items: center;
   justify-content: center;
   max-width: 700px;
-  min-height: 700px;
+  min-height: 100vh;
   margin: 0 auto;
   text-align: center;
   padding: 0 30px;
@@ -43,7 +43,8 @@ main {
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       color: $rock-spray;
-      font-size: 1.7rem;
+      font-size: 4.7rem;
+
     }
     &:hover {
       cursor: url(./../images/pointer.png), auto;
@@ -52,7 +53,8 @@ main {
   li {
     display: inline-block;
     + li {
-      margin-left: 10px;
+      margin-left: 40px;
+      margin-top: 2rem;
     }
     &.github a {
       &:before {
@@ -67,6 +69,21 @@ main {
     &.twitter a {
       &:before {
         content: "\e902";
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .social {
+    a {
+      &:before {
+        font-size: 1.7rem;
+      }
+    }
+    li {
+      + li {
+        margin-left: 10px;
       }
     }
   }
