@@ -16,7 +16,8 @@ body {
 }
 
 p {
-  margin-bottom: 1.3em;
+  margin-bottom: 1.3rem;
+  font-size: 1.9rem;
 }
 
 h1,
@@ -25,33 +26,44 @@ h3,
 h4 {
   font-family: $fjalla;
   font-weight: inherit;
-  line-height: 1.2;margin: 1.414em 0 0.5em;
+  line-height: 1.2;
+  margin: 1.414rem 0 0.5rem;
 }
 
 h1 {
-  font-size: 2.441em;
+  font-size: 5.441rem;
   margin-top: 0;
 }
 
 h2 {
-  font-size: 1.953em;
+  font-size: 1.953rem;
 }
 
 h3 {
-  font-size: 1.563em;
+  font-size: 1.563rem;
 }
 
 h4 {
-  font-size: 1.25em;
+  font-size: 1.25rem;
 }
 
 small,
 .font_small {
-  font-size: 0.8em;
+  font-size: 0.8rem;
 }
+@media screen and (min-width: 65em) {
 
-@media only screen and (min-width: 700px) {
+
+//@media screen and (min-width: 43.750em) {
   body {
-    font-size: initial;
+    //font-size: initial;
+  }
+
+  h1 {
+    font-size: 2.441rem;
+  }
+  
+  p {
+    font-size: 1rem;
   }
 }
