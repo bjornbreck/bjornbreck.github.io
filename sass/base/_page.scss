@@ -33,7 +33,8 @@ main {
     font: 0/0 transparent;
     text-decoration: none;
     cursor: url(./../images/pointer.png), auto;
-    &:before {
+    &:before,
+    &:after {
       font-family: 'icomoon' !important;
       speak: none;
       font-style: normal;
@@ -45,14 +46,52 @@ main {
       -moz-osx-font-smoothing: grayscale;
       color: $rock-spray;
       font-size: 4.7rem;
-
     }
+    //&:before {
+    //  position: absolute;
+    //  top: 50%;
+    //  left: 50%;
+    //  transform: translate(-50%, -43%);
+    //}
+    //&:after {
+      //position: absolute;
+      //top: 50%;
+      //left: 50%;
+      //transform: scale(0) translate(-50%, -43%);
+      //color: $gossamer;
+      //border-radius: 100%;
+    //}
     &:hover {
       cursor: url(./../images/pointer.png), auto;
+      &:before {
+        //transform: scale(0) translate(-50%, -43%);
+      }
+      &:after {
+        //transform: scale(1) translate(-50%, -43%);
+      }
     }
   }
   li {
+    position: relative;
     display: inline-block;
+    width: 35px;
+    height: 35px;
+    //&:before {
+    //  content: '';
+    //  position: absolute;
+    //  top: 50%;
+    //  left: 50%;
+    //  width: 100%;
+    //  height: 100%;
+    //  transform: scale(0) translate(-50%, -43%);
+    //  background-color: $rock-spray;
+    //  border-radius: 100%;
+    //}
+    //&:hover {
+    //  &:before {
+    //    transform: scale(1) translate(-50%, -43%);
+    //  }
+    //}
     + li {
       margin-left: 40px;
       margin-top: 2rem;
@@ -61,15 +100,37 @@ main {
       &:before {
         content: "\e900";
       }
+      //&:after {
+      //  content: "\e900";
+      //}
     }
     &.instagram a {
       &:before {
         content: "\e901";
       }
+      //&:after {
+      //  content: "\e901";
+      //}
     }
     &.twitter a {
       &:before {
         content: "\e902";
+      }
+      //&:after {
+      //  content: "\e902";
+      //}
+    }
+    &.codepen a {
+      &:before {
+        content: "\e903";
+      }
+      //&:after {
+      //  content: "\e903";
+      //}
+      &:hover {
+        &:after {
+          //font-size: 1.7rem;
+        }
       }
     }
   }
@@ -78,7 +139,8 @@ main {
 @media screen and (min-width: 65em) {
   .social {
     a {
-      &:before {
+      &:before,
+      &:after {
         font-size: 1.7rem;
       }
     }
