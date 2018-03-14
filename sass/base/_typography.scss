@@ -7,19 +7,24 @@ html {
 }
 
 body {
-  color: $rock-spray;
+  color: $tan;
   background-color: white;
   font-family: $cantarell;
   font-weight: 400;
   line-height: 1.45;
   font-size: 2.6rem;
-  animation: 20s colorChange infinite;
-  animation-timing-function: ease;
+  //animation: 20s colorChange infinite;
+  //animation-timing-function: ease;
 }
 
 p {
   margin-bottom: 1.3rem;
   font-size: 3.1rem;
+  span {
+    font-size: 115%;
+    text-transform: none;
+    font-family: $fjalla;
+  }
 }
 
 h1,

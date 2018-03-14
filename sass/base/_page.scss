@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  background-color: $light-green;
+  background-color: $olive;
 }
 
 main {
@@ -31,7 +31,7 @@ main {
   list-style-type: none;
   padding: 0;
   margin: 20px 0 0;
-  min-width: 240px;
+  min-width: 340px;
   a {
     font: 0/0 transparent;
     text-decoration: none;
@@ -47,10 +47,10 @@ main {
       line-height: 1;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: $rock-spray;
+      color: $tan;
       font-size: 6rem;
       transition: .4s ease color, .4s ease box-shadow;
-      box-shadow: 0 0 0 0 #309567, 0 0 0 0 #A33D27, 0 0 0 0 #309567, 0 0 0 0 #A33D28;
+      box-shadow: 0 0 0 0 $olive, 0 0 0 0 $tan, 0 0 0 0 $olive, 0 0 0 0 $tan;
       border-radius: 100%;
     }
     //&:before {
@@ -71,9 +71,9 @@ main {
       cursor: url(./../images/pointer.png), auto;
       &:before {
         //transform: scale(0) translate(-50%, -43%);
-        -webkit-text-stroke: 1px $rock-spray;
+        -webkit-text-stroke: 1px $tan;
         color: transparent;
-        box-shadow: 0 0 0 6px #309567, 0 0 0 8px #A33D28, 0 0 0 12px #309567, 0 0 0 14px #A33D28;
+        box-shadow: 0 0 0 6px $olive, 0 0 0 8px $tan, 0 0 0 12px $olive, 0 0 0 14px $tan;
       }
       &:after {
         //transform: scale(1) translate(-50%, -43%);
@@ -171,26 +171,30 @@ main {
 /// ============
 .tippy-tooltip {
   &.awesome-theme {
-    background-color: $rock-spray;
+    background-color: $tan;
   }
   img {
     max-width: 400px!important;
   }
+  .tippy-content {
+    color: $olive;
+    font-family: $fjalla;
+  }
 }
 
 .tippy-popper[x-placement^=top] .tippy-tooltip.awesome-theme .tippy-arrow {
-  border-top-color: $rock-spray!important;
+  border-top-color: $tan!important;
 }
 
 .tippy-popper[x-placement^=right] .tippy-tooltip.awesome-theme .tippy-arrow {
-  border-right-color: $rock-spray!important;
+  border-right-color: $tan!important;
 }
 
 .tippy-popper[x-placement^=bottom] .tippy-tooltip.awesome-theme .tippy-arrow {
-  border-bottom-color: $rock-spray!important;
+  border-bottom-color: $tan!important;
 }
 
 .tippy-popper[x-placement^=left] .tippy-tooltip.awesome-theme .tippy-arrow {
-  border-left-color: $rock-spray!important;
+  border-left-color: $tan!important;
 }
 
