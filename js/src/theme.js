@@ -87,41 +87,20 @@ $(document).ready(function () {
   $('.color-text').click(function(e) {
     e.preventDefault();
 
-    if (colors < 6) {
-      colors++;
-    } else if (colors < 6) {
+    let colors = [
+      '#7a5650',
+      '#435454',
+      '#1d6b8b',
+      '#f2a66f',
+      '#e9683d',
+      '#db3b29'
+    ];
 
-    }
-    else {
-      colors = 0;
-    }
+    let randomColorOne = colors[Math.floor(Math.random()*colors.length)];
+    let randomColorTwo = colors[Math.floor(Math.random()*colors.length)];
 
-    // console.log(colors);
-    // console.log(color);
-
-    switch(colors) {
-      case 0:
-        color = '#7a5650';
-        break;
-      case 1:
-        color = '#435454';
-        break;
-      case 2:
-        color = '#1d6b8b';
-        break;
-      case 3:
-        color = '#f2a66f';
-        break;
-      case 4:
-        color = '#e9683d';
-        break;
-      case 5:
-        color = '#db3b29';
-        break;
-    }
-    $(this).css('color', color);
-    // $(this).children().first().css('color', color);
-    // $(this).children().last().css('color', color);
+    $(this).children().first().css('color', randomColorOne);
+    $(this).children().last().css('color', randomColorTwo);
   })
 
 
