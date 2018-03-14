@@ -14,7 +14,8 @@ $(document).ready(function () {
     animation: 'shift-away',
     distance: 15,
     theme: 'awesome',
-    arrowTransform: 'scale(2)'
+    arrowTransform: 'scale(2)',
+    sticky: true
   });
 
   tippy('.tooltipLocation', {
@@ -26,7 +27,9 @@ $(document).ready(function () {
     distance: 15,
     theme: 'awesome',
     arrowTransform: 'scale(2)',
-    trigger: 'click'
+    trigger: 'click',
+    sticky: true,
+    interactive: true
   });
 
   tippy('.tooltipRealLocation', {
@@ -36,7 +39,8 @@ $(document).ready(function () {
     animation: 'shift-away',
     distance: 15,
     theme: 'awesome',
-    arrowTransform: 'scale(2)'
+    arrowTransform: 'scale(2)',
+    sticky: true
   });
 
   tippy('.tooltipMountainBking', {
@@ -47,7 +51,8 @@ $(document).ready(function () {
     animation: 'shift-away',
     distance: 15,
     theme: 'awesome',
-    arrowTransform: 'scale(2)'
+    arrowTransform: 'scale(2)',
+    sticky: true
   });
 
   tippy('.tooltipJam', {
@@ -58,6 +63,21 @@ $(document).ready(function () {
     animation: 'shift-away',
     distance: 15,
     theme: 'awesome',
-    arrowTransform: 'scale(2)'
+    arrowTransform: 'scale(2)',
+    sticky: true
+  });
+
+  tippy('.tooltipNeature', {
+    html: document.querySelector('.neature'),
+    arrow: true,
+    arrowType: 'sharp',
+    inertia: true,
+    animation: 'shift-away',
+    distance: 15,
+    theme: 'awesome',
+    arrowTransform: 'scale(2)',
+    trigger: 'click',
+    sticky: true,
+    interactive: true
   })
 });

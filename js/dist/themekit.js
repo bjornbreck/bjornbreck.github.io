@@ -69,7 +69,8 @@
 	    animation: 'shift-away',
 	    distance: 15,
 	    theme: 'awesome',
-	    arrowTransform: 'scale(2)'
+	    arrowTransform: 'scale(2)',
+	    sticky: true
 	  });
 
 	  (0, _tippy2.default)('.tooltipLocation', {
@@ -81,7 +82,9 @@
 	    distance: 15,
 	    theme: 'awesome',
 	    arrowTransform: 'scale(2)',
-	    trigger: 'click'
+	    trigger: 'click',
+	    sticky: true,
+	    interactive: true
 	  });
 
 	  (0, _tippy2.default)('.tooltipRealLocation', {
@@ -91,7 +94,8 @@
 	    animation: 'shift-away',
 	    distance: 15,
 	    theme: 'awesome',
-	    arrowTransform: 'scale(2)'
+	    arrowTransform: 'scale(2)',
+	    sticky: true
 	  });
 
 	  (0, _tippy2.default)('.tooltipMountainBking', {
@@ -102,7 +106,8 @@
 	    animation: 'shift-away',
 	    distance: 15,
 	    theme: 'awesome',
-	    arrowTransform: 'scale(2)'
+	    arrowTransform: 'scale(2)',
+	    sticky: true
 	  });
 
 	  (0, _tippy2.default)('.tooltipJam', {
@@ -113,7 +118,22 @@
 	    animation: 'shift-away',
 	    distance: 15,
 	    theme: 'awesome',
-	    arrowTransform: 'scale(2)'
+	    arrowTransform: 'scale(2)',
+	    sticky: true
+	  });
+
+	  (0, _tippy2.default)('.tooltipNeature', {
+	    html: document.querySelector('.neature'),
+	    arrow: true,
+	    arrowType: 'sharp',
+	    inertia: true,
+	    animation: 'shift-away',
+	    distance: 15,
+	    theme: 'awesome',
+	    arrowTransform: 'scale(2)',
+	    trigger: 'click',
+	    sticky: true,
+	    interactive: true
 	  });
 	});
 

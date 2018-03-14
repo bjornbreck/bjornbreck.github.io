@@ -1,0 +1,13 @@
+////
+/// Animations
+////
+
+@keyframes colorChange {
+  from,
+  to {
+    color: $rock-spray;
+  }
+  50% {
+    color: $purple;
+  }
+}
