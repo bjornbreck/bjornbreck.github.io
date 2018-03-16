@@ -30,9 +30,11 @@ main {
   flex-flow: row nowrap;
   list-style-type: none;
   padding: 0;
-  margin: 20px 0 0;
+  margin: 20px 0 40px;
   width: 100%;
   min-width: 340px;
+  max-width: 450px;
+  justify-content: space-evenly;
   a {
     font: 0/0 transparent;
     text-decoration: none;
@@ -83,8 +85,7 @@ main {
   }
   li {
     position: relative;
-    display: inline-block;
-    width: 20%;
+    width: auto;
     height: 35px;
     //&:before {
     //  content: '';
@@ -102,9 +103,9 @@ main {
     //    transform: scale(1) translate(-50%, -43%);
     //  }
     //}
-    + li {
-      margin-left: 40px;
-    }
+    //+ li {
+    //  margin-left: 40px;
+    //}
     &.github a {
       &:before {
         content: "\e900";
@@ -161,12 +162,16 @@ main {
         font-size: 1.7rem;
       }
     }
-    li {
-      + li {
-        margin-left: 10px;
-      }
-    }
+    //li {
+    //  + li {
+    //    margin-left: 10px;
+    //  }
+    //}
   }
+}
+
+.color-text {
+  user-select: none;
 }
 
 /// Just the tip
@@ -198,5 +203,35 @@ main {
 
 .tippy-popper[x-placement^=left] .tippy-tooltip.awesome-theme .tippy-arrow {
   border-left-color: $tan!important;
+}
+
+/// Ripple Things
+/// =============
+.has-ripple {
+  position: relative;
+  overflow: hidden;
+  -webkit-transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.ripple {
+  display: block;
+  position: absolute;
+  pointer-events: none;
+  border-radius: 50%;
+
+  -webkit-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+
+  background: #fff;
+  opacity: 1;
+}
+
+.ripple-animate {
+  -webkit-animation: ripple;
+  -o-animation: ripple;
+  animation: ripple;
 }
 
